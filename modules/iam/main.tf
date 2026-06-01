@@ -54,3 +54,5 @@ resource "aws_iam_user_policy_attachment" "this" {
 resource "aws_iam_access_key" "this" {
   user = aws_iam_user.s3_uploader.name
 }
+
+# Service params store / secrets manager
