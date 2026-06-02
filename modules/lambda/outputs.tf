@@ -1,7 +1,7 @@
 output "queue_arn" {
-  value = aws_sqs_queue.main.arn
+  value = var.queue_arn
 }
 
 output "queue_url" {
-  value = aws_sqs_queue.main.id
+  value = var.queue_url
 }
