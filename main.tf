@@ -30,7 +30,7 @@ module "lambda" {
 }
 
 module "notifications" {
-  source = "./modules/notifications"
+  source = "./modules/s3/notifications"
 
   bucket_name = module.s3.bucket_name
   queue_arn   = module.sqs.queue_arn
