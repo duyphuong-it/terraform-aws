@@ -9,5 +9,9 @@ resource "aws_s3_bucket_notification" "this" {
     events = [
       "s3:ObjectCreated:*"
     ]
+
+    filter_prefix = "data/"
+
+    filter_suffix = ".csv"
   }
 }
