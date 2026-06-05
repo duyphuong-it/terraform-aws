@@ -5,9 +5,9 @@ module "s3_tf_backend" {
   environment = var.environment
 }
 
-module "dynamodb" {
-  source = "./modules/dynamodb"
+module "dynamodb_metadata_pipeline" {
+  source = "./modules/dynamodb/metadata_pipeline"
 
-  dynamodb_table_name = var.dynamodb_table_name
   environment = var.environment
+  system_name = var.system_name
 }
